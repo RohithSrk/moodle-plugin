@@ -1,0 +1,18 @@
+<div>
+    <core-course-module-description description="" component="mod_checklist" componentId="{{cmid}}"></core-course-module-description>
+
+    <ion-list>
+
+        <ion-list-header>
+            <p class="item-heading">Checklist Summary</p>
+        </ion-list-header>
+
+        {{#summary}}
+        <ion-item>
+            {{name}} <span item-end>{{checked}}/{{enrolled}}</span>
+        </ion-item>
+        {{/summary}}
+
+    </ion-list>
+
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <core-course-module-description description="" component="mod_checklist" componentId="{{cmid}}"></core-course-module-description>
+    <ion-card>
+        <ion-card-content>
+            {{#dberror}}
+                There was an error submitting the data.
+            {{/dberror}}
+            {{^dberror}}
+                Submitted Successfully.
+            {{/dberror}} 
+        </ion-card-content>
+    </ion-card>
+</div>
